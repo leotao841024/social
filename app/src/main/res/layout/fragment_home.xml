@@ -1,0 +1,151 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color" >
+    <RelativeLayout
+        android:id="@+id/layouter"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/appcolor_red">
+        <LinearLayout
+            android:id="@+id/covert_left_dao"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="start"
+                android:src="@mipmap/icon_exit"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="首页"
+                android:textColor="@color/white"
+                android:textSize="@dimen/action_title" >
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lay_phone"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="end"
+                android:src="@mipmap/phone_icon" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lay_vedio"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="end"
+                android:src="@mipmap/vedio_icon" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lay_voild"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="end"
+                android:src="@mipmap/sound_icon" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/bg"
+          />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <Button
+                    android:id="@+id/btn_open"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text="@string/open_door"
+                    android:background="@mipmap/btn_bg"
+                    android:textSize="@dimen/talk_title"
+                    android:layout_marginRight="@dimen/padding_10dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:gravity="center" >
+                <Button
+                    android:id="@+id/btn_admin"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:text="@string/admin"
+                    android:background="@mipmap/btn_bg"
+                    android:textSize="@dimen/talk_title"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <!--<TextView-->
+            <!--android:id="@+id/txt_common"-->
+            <!--android:layout_width="30dp"-->
+            <!--android:layout_height="30dp"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:gravity="center"-->
+            <!--android:text="常用"-->
+            <!--android:layout_marginBottom="-10dp"-->
+            <!--android:background="@mipmap/btn_bg"-->
+            <!--/>-->
+    </RelativeLayout>
+
+</LinearLayout>

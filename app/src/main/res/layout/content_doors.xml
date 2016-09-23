@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/layouter"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/appcolor_red">
+        <LinearLayout
+            android:id="@+id/covert_left_dao"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="start"
+                android:src="@mipmap/icon_exit"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="门禁"
+                android:textColor="@color/white"
+                android:textSize="@dimen/action_title" >
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/covert_right_dao"
+            android:layout_width="40dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="end"
+                android:text="@string/title_order"
+                android:src="@mipmap/talk_ioc_right" android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/list_line"
+        android:paddingTop="5dp">
+        <GridView
+            android:id="@+id/gvw_doors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:columnWidth="100dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:horizontalSpacing="2dp"
+            android:verticalSpacing="2dp"
+            android:background="@color/list_line" >
+        </GridView>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="门禁"/>
+    </RelativeLayout>
+</LinearLayout>

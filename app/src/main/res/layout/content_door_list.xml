@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp" android:orientation="horizontal" >
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="120dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp">
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/nav_title"
+            android:layout_centerInParent="true"
+         />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="2"
+       >
+        <TextView
+            android:id="@+id/txt_intratitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="服务介绍"
+            android:textSize="@dimen/txt_size"
+            android:layout_marginTop="5dp"/>
+        <TextView
+            android:id="@+id/txt_intra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/txt_intratitle"
+            android:textSize="@dimen/txt_size" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp" android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(价格)"
+                android:textSize="@dimen/txt_size" />
+            <TextView
+                android:id="@+id/txt_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_size" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1" android:layout_marginBottom="5dp" android:layout_marginRight="5dp">
+        <TextView
+            android:id="@+id/txt_comment_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="评价" android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="@dimen/txt_size"
+            />
+        <TextView
+            android:id="@+id/txt_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/txt_size"
+            android:text="评价"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_toRightOf="@+id/txt_comment_title"
+            android:layout_alignParentBottom="true"
+         />
+    </RelativeLayout>
+</LinearLayout>

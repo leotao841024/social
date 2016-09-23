@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+    <versions>
+        <version level="1">
+            <sqlstr desc="create table  IF NOT EXISTS apm_linkman(id integer,EntranceID varchar(30),ResidentName varchar(30),PhoneNumber varchar(30),SequenceNumber integer,ResidentType varchar(30),Email varchar(30));" />
+        </version>
+    </versions>
+</root>
